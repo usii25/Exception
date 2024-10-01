@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Exception;
 
 import java.io.File;
@@ -13,8 +9,10 @@ public class FilenotFound_Demo {
         try {
             File file = new File("E://file.txt");
             FileReader fr = new FileReader(file);
+            //mencoba membuka file "E://file.txt" menggunakan `FileReader`
         } catch (Exception e) {
             System.out.println("Ada Kesalahan");
+            //jika tidak ditemukan atau terdapat kesalahan, exception akan diambil oleh catch dan mencetak pesan "Ada Kesalahan"
         }
     }
 }
